@@ -11,6 +11,7 @@
         <Button x:Name="PrintCoordsBtn" Content="Button" HorizontalAlignment="Left" Height="59" Margin="270,249,0,0" VerticalAlignment="Top" Width="130" Click="PrintCoordsBtn_Click"/>
         <Button x:Name="stopRecBtn" Content="Stop rec" HorizontalAlignment="Left" Height="47" Margin="518,170,0,0" VerticalAlignment="Top" Width="134" Click="stopRecBtn_Click"/>
         <Image x:Name="heatmapImage" HorizontalAlignment="Left" Height="344" Margin="57,53,0,0" VerticalAlignment="Top" Width="598"/>
+        <Button Content="gennnn" HorizontalAlignment="Left" Height="66" Margin="574,271,0,0" VerticalAlignment="Top" Width="51" Click="Button_Click"/>
 
     </Grid>
 </Window>

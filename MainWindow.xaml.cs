@@ -96,5 +96,26 @@ namespace MouseTrackingV2
             recordingTimer.Stop();
             MouseHook.StopTracking();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Filling with coords start");
+
+            List<Coordinate> coordinates = new List<Coordinate>
+            {
+                new Coordinate(1000,500),
+                new Coordinate(1020,500),
+                new Coordinate(1030,500)
+
+            };
+
+            var builder = new HeatmapBuilder(coordinates, 1920, 1080, 1920, 1080);
+
+            var img = builder.AddMinAndMaxColors(Color.White, Color.FromArgb(255,0,0,0)).SetPixelWidth(10).SetBlendDrop(0.5f).CreateBitmap();
+
+            img.Save("ViktorovaSlikaNajjacaBato2.png", System.Drawing.Imaging.ImageFormat.Png);
+
+
+        }
     }
 }
